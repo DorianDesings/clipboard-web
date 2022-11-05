@@ -1,0 +1,23 @@
+.title,
+.title--small,
+.title--extra-small {
+  color: var(--dark-grey);
+}
+
+.main-title {
+  font-size: 2.5rem;
+}
+
+.title {
+  font-size: 2rem;
+
+  &--small {
+    font-size: 1.5rem;
+    margin-bottom: 0;
+  }
+
+  &--extra-small {
+    font-size: 1.2rem;
+    margin-bottom: 0;
+  }
+}

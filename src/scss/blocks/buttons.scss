@@ -1,0 +1,48 @@
+@use '../mixins/responsive.scss' as *;
+@use '../mixins/hover.scss' as *;
+@use '../config/variables.scss' as *;
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 125px;
+
+  @include responsive(laptop) {
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 1rem;
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.button {
+  padding: 1rem 2rem;
+  border-radius: 2rem;
+  color: #fff;
+  width: 100%;
+
+  &--primary {
+    box-shadow: inset 0 -4px darken($primary-color, 15),
+      0 10px 20px transparentize($primary-color, 0.5);
+    background-color: var(--primary-color);
+
+    &:hover {
+      background-color: lighten($primary-color, 10);
+    }
+  }
+
+  &--secondary {
+    background-color: var(--secondary-color);
+    box-shadow: inset 0 -4px darken($secondary-color, 15),
+      0 10px 20px transparentize($secondary-color, 0.5);
+    &:hover {
+      @include hover {
+        background-color: lighten($secondary-color, 10);
+      }
+    }
+  }
+}

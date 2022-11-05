@@ -1,0 +1,16 @@
+@use 'base/normalize.scss';
+@use 'base/initial-reset.scss';
+@use 'config/variables.scss';
+@use 'blocks/body.scss';
+@use 'blocks/header.scss';
+@use 'blocks/main.scss';
+@use 'blocks/article.scss';
+@use 'blocks/trademarks.scss';
+@use 'blocks/titles.scss';
+@use 'blocks/texts.scss';
+@use 'blocks/buttons.scss';
+@use 'blocks/logo.scss';
+@use 'blocks/footer.scss';
+@use 'blocks/social-icons.scss';
+
+//1 - Identificar todos los bloques que tendrá tu sitio web para crearlos e importarlos

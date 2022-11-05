@@ -1,0 +1,15 @@
+:root {
+  /* Variables CSS */
+  --primary-color: hsl(171, 66%, 44%);
+  --secondary-color: hsl(233, 100%, 69%);
+  --dark-grey: hsl(210, 10%, 33%);
+  --light-grey: hsl(201, 11%, 66%);
+  --very-light-grey: hsl(220, 18%, 97%);
+}
+
+/* Variables SASS */
+$primary-color: hsl(171, 66%, 44%);
+$secondary-color: hsl(233, 100%, 69%);
+$dark-grey: hsl(210, 10%, 33%);
+$light-grey: hsl(201, 11%, 66%);
+$very-light-grey: hsl(220, 18%, 97%);

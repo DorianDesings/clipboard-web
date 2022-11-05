@@ -1,0 +1,13 @@
+@use '../functions/image.scss' as *;
+@use '../mixins/responsive.scss' as *;
+
+.header {
+  padding: 6.66rem 2rem 9rem;
+  background-image: image('bg-header-mobile.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @include responsive(laptop) {
+    background-image: image('bg-header-desktop.png');
+  }
+}

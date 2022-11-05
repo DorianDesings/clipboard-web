@@ -1,0 +1,15 @@
+@use '../mixins/responsive.scss' as *;
+
+.logo {
+  width: 115px;
+  margin: 0 auto 3.8rem;
+
+  &--footer {
+    width: 55px;
+    margin: 0 auto 3.8rem;
+
+    @include responsive(laptop) {
+      margin: 0 auto;
+    }
+  }
+}

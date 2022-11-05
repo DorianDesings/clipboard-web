@@ -1,0 +1,55 @@
+@use '../mixins/responsive.scss' as *;
+
+.article {
+  padding-bottom: 5rem;
+  @include responsive(laptop) {
+    padding-bottom: 8rem;
+  }
+}
+
+.image {
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.two-columns {
+  @include responsive(laptop) {
+    display: flex;
+    align-items: center;
+  }
+
+  &__image {
+    position: static;
+    @include responsive(laptop) {
+      position: relative;
+      left: -100px;
+      max-width: 500px;
+    }
+  }
+
+  &__text {
+    @include responsive(laptop) {
+      text-align: left;
+    }
+  }
+}
+
+.icon-list {
+  @include responsive(laptop) {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    gap: 1rem;
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__image {
+    height: 40px;
+  }
+}

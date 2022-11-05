@@ -1,0 +1,36 @@
+@use '../mixins/responsive.scss' as *;
+@use '../mixins/hover.scss' as *;
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 3rem 0;
+  background-color: var(--very-light-grey);
+  color: var(--dark-grey);
+
+  @include responsive(laptop) {
+    flex-direction: row;
+    text-align: left;
+  }
+
+  &-list {
+    margin-bottom: 2rem;
+    @include responsive(laptop) {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      width: 400px;
+    }
+
+    &__item {
+      padding: 1rem 0;
+
+      &:hover {
+        @include hover {
+          color: var(--primary-color);
+        }
+      }
+    }
+  }
+}
